@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    /* colors */
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--Very-Light-Gray);
+}
+
+h1 {
+    font-weight: 275;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    letter-spacing: 0.166667px;
+    color: var(--Very-Dark-Blue);
+}
+
+.font-weight-bold {
+    font-weight: 600!important;
+}
+
+.heading-p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    text-align: center;
+    letter-spacing: 0.104167px;
+    color: var(--Very-Dark-Blue);
+    opacity: 0.5;
+    margin-top: 13px;
+    margin-bottom: 76px;
+}
+
+img {
+    width: 6.4rem;
+    height: 6.4rem;
+}
+
+.container {
+    padding: 85px 32px 54px;
+}
+
+.row {
+    display: unset;
+}
+
+.card {
+    padding: 32px;
+    margin-bottom: 24px;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border: none;
+    border-radius: 8px;
+    min-height: 250px;
+}
+
+.border-cyan {
+    border-top: 3.55px solid var(--Cyan);
+}
+
+.border-red {
+    border-top: 3.55px solid var(--red);
+}
+
+.border-orange {
+    border-top: 3.55px solid var(--orange);
+}
+
+.border-blue {
+    border-top: 3.55px solid var(--blue);
+}
+
+.card-title {
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 0;
+}
+
+.card-text {
+    margin-top: 0.6rem;
+    margin-bottom: 4rem;
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    letter-spacing: 0.0902778px;
+    color: var(--Very-Dark-Blue);
+    opacity: 0.5;
+}
+
+.img-div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 1440px) {
+    h1 {
+        font-weight: 275;
+        font-size: 3.6rem;
+        line-height: 5.4rem;
+        letter-spacing: 0.25px;
+        color: var(--Very-Dark-Blue);
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 64px 165px 80px;
+    }
+
+    .card {
+        max-width: 350px;
+        min-width: 350px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    
+}
